@@ -49,7 +49,7 @@ public class UserController {
 	public ResponseEntity<UserResponse> updateUser(@RequestBody User user) {
 		Integer id = user.getId();
 		User updatedUser = null;
-		
+		//test-comment
 		if(id != null && userService.getUserById(id) != null) 
 			updatedUser = userService.updateUser(user);
 		
